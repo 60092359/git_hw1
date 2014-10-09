@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<link href = "./stylesheets/reset.css" rel = "stylesheet" type = "text/css">
+	<link href = "./stylesheets/ex3.css" rel = "stylesheet" type = "text/css">
+	<title>I-3</title>
+</head>
+<body>
+	
+	<div id = "head">
+		<div id = "h_left">
+			Google + MJU
+		</div>
+		<div id = "h_right">
+			<input type = "button" value = "로그인"/>
+		</div>
+	</div>
+	
+	<div id = "body_center">
+		<div id = "title">
+			웹프로그래밍 계정 만들기
+		</div>
+		<div id = "left">
+			<span>계정 하나로 모든 서비스 이용<br>
+			구글기업 mju와 연동 서비스<br>
+			사용자 학번과 비밀번호만 있으면 모든 구글서비스를 이용하실 수 있습니다.<br></span>
+			<img src="images/image.png" alt="이용">
+			<span>언제 어디서나 이용가능 <br>
+			여러 기기 간에 전환하여 끊김없이 서비스를 계속 사용할 수 있습니다.</span>
+			<img src="images/image1.png" alt="기기">
+		</div>
+		<div id = "right">
+			<form action ="url" method = "post">
+				<table border = "1">
+					<caption>Register</caption>
+					<tbody>
+						<tr>
+							<th>사진등록</th>
+							<td><input type = "file" name = "photo"/></td>
+						</tr>
+						<tr>
+							<th>주민등록번호</th>
+							<td><input type = "text" name = "fnum" size = "4"/>-<input type = "password" name = "lnum" size = "4"/></td>
+						</tr>
+						<tr>
+							<th>학번</th>
+							<td><input type = "text" name="num" size = "10"/><input type = "button" value = "중복조회"/></td>
+						</tr>
+						<tr>
+							<th>비밀번호</th>
+							<td><input type = "password" name = "pwd" size = "10"/>숫자,특수문자 포함)</td>
+						</tr>
+						<tr>
+							<th>성별</th>
+							<td><input type = "radio" name = "sex" value = "m"/>남<input type = "radio" name = "sex" value = "f"/>여</td>
+						</tr>
+						<tr>
+							<th>학과</th>
+							<td><select name = "hk">
+								<option value = "a">컴퓨터공학과</option>
+								<option value = "b">정보통신공학과</option>
+								<option value = "c">교통공학과</option>
+								<option value = "d">뮤지컬학과</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<th>주소</th>
+							<td><select name = "address">
+								<option value = "a">서울</option>
+								<option value = "b">경기도</option>
+								<option value = "c">인천</option>
+								<option value = "d">부산</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<th>취미</th>
+							<td><input type = "checkbox" name = "hobby" value = "book"/>독서
+								<input type = "checkbox" name = "hobby" value = "movie"/>영화
+								<input type = "checkbox" name = "hobby" value = "traveling"/>여행
+								<input type = "checkbox" name = "hobby" value = "exercise"/>운동
+							</td>
+						</tr>
+						<tr>
+							<th>하고싶은 말</th>
+							<td><textarea cols = "40" rows = "5" name = "mention"></textarea></td>
+						</tr>
+						<tr>
+							<th colspan = "2" class="submit"><input type = "submit"/></th>
+						</tr>
+					</tbody>
+				</table>
+			</form>
+		</div>
+		<div id="pagination">
+			<a href="index2.html" class="direction"><span>&lsaquo;</span>이전</a>
+			<a href="index.html">1</a>
+			<a href="index2.html">2</a>
+			<a href="#">3</a>
+			<a href="#" class="direction">다음 <span>&rsaquo;</span></a>
+		</div>
+</div>
+</body>
+</html>
